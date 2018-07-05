@@ -1,0 +1,305 @@
+
+
+.panel-pricing {
+  -moz-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+.panel-pricing:hover {
+  box-shadow: 0px 0px 30px #052a5291;
+}
+.panel-pricing .panel-heading {
+  padding: 20px 10px;
+}
+.panel-pricing .panel-heading .fa {
+  margin-top: 10px;
+  font-size: 58px;
+}
+.panel-pricing .list-group-item {
+  color: #777777;
+  border-bottom: 1px ;
+}
+.panel-pricing .list-group-item:last-child {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.panel-pricing .list-group-item:first-child {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+.panel-pricing .panel-body {
+  background-color: #f0f0f0;
+  font-size: 40px;
+  color: #777777;
+  padding: 20px;
+  margin: 0px;
+}
+
+
+.ir-arriba {
+  display:none;
+  padding:20px;
+  background:#70859c;
+  font-size:20px;
+  color:#fff;
+  position: fixed;
+  bottom:20px;
+  right:20px;
+  z-index: 2;
+}
+
+
+.tabs-regi{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+ul.nav-tabs li a {
+  color: white;
+}
+
+.btn-glyphicon { padding:8px; background:#ffffff; margin-right:4px; }
+.icon-btn { padding: 1px 15px 3px 2px; border-radius:50px;}
+
+
+
+/* navbar */
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    margin-bottom: 0px;
+    position: fixed;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 10007;
+}
+.content-block-one {
+  padding: 30px;
+  margin-bottom: 0px;
+  color: inherit;
+  background-color: #eee;
+}
+.content-block-one h1,
+.content-block-one .h1 {
+  color: inherit;
+}
+.content-block-one p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.content-block-one > hr {
+  border-top-color: #d5d5d5;
+}
+.container .content-block-one {
+  border-radius: 6px;
+}
+.content-block-one .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .content-block-one {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .content-block-one {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+  .content-block-one h1,
+  .content-block-one .h1 {
+    font-size: 63px;
+  }
+}
+.content-space-one {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: inherit;
+  background: url(../image/heder-01.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.content-space-two {
+  padding: 0px;
+  margin-bottom: 0px;
+  color: inherit;
+  background: url(http://placehold.it/1200x650/cc0000/ffffff) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.page-break {
+    width: 50%;
+    height: 3px;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+/*-------------------------------------------*/
+
+
+.container-full {
+  width: 100%;
+  height: 100%;
+  padding-top: 190px;
+  padding-bottom: 165px;
+  padding-left: 90px;
+  padding-right: 90px;
+}
+
+.container-full a {
+  color:#efefef;
+  text-decoration:none;
+}
+
+.container-workgrid {
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+  min-height:100%;
+}
+
+.container-workgrid img{
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+.container-aboutme {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.container-contact {
+  padding-left: 102px;
+  padding-top: 90px;
+}
+  
+.container-contact h2 {
+  font-family: 'Lora', serif;
+  font-size: 38px;
+  color: #3d3b39;
+  letter-spacing: 1px;
+  line-height: 43px;
+  font-weight: regular;
+  padding:0;
+  margin:0;
+}
+
+.container-contact p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700, bold;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #3d3b39;
+  letter-spacing: 3px;
+  line-height: 15px;
+  margin: 0;
+  padding-top: 50px;
+  width: 220px;
+  }
+  
+.container-contact a {
+    text-transform: uppercase;
+  color: #939393;
+    letter-spacing: 3px;
+    font-size: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700, bold;
+  }
+      
+.container-contact a:hover {
+    text-transform: uppercase;
+  color: #3d3b39;
+  border: 0;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 700, bold;
+  }
+
+.container-bio {
+  padding-right: 90px;
+  padding-top: 90px
+}
+  
+.container-bio p {
+  font-family: 'Lora', serif;
+  font-size: 21px;
+  color: #939393;
+  letter-spacing: 0px;
+  line-height: 29px;
+  font-weight: regular;
+}
+
+
+.navbar-homebutton {
+    float: left;
+  }
+
+.thumbnail-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.thumbnail-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease;
+  background-color: #3d3b39;
+}
+
+.thumbnail-overlay:hover{
+  opacity: .95;
+  cursor: pointer;
+}
+
+.thumbnail-title {
+  color: #e2e0de;
+  font-size: 23px;
+  position: absolute;
+  font-family: Lora;
+  line-height: 31px;
+  letter-spacing: 1px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.thumbnail-title p{
+  font-family: 'Lato', sans-serif;
+  font-weight: 700, strong;
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #939393;
+  letter-spacing: 3px;
+  padding-top: 15px;
+}
+
+
+/*----------------------------------------------------*/
+
+
