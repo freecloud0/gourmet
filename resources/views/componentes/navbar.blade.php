@@ -22,15 +22,25 @@
 </head>
 <body>
         <ul class="nav  justify-content-end bg-cooking p-2" >
+            <!--
                 <li class="nav-item">
                     <a class="nav-link white-text" href="#!">Docentes</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link white-text" href="#!">Alumnos</a>
                 </li>
+            --><li class="nav-item ">
+                    <a class="nav-link white-text sise-t-18" id="trabajo" href="{{ url('trabajo') }}">
+                        <i class="fas fa-coffee mr-2"></i>Trabaja con Nosotros</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link white-text sise-t-18" id="trabajo" href="#!" data-toggle="modal" data-target="#fullHeightModalRight">
+                        <i class="far fa-edit mr-2"></i>Matrícula</a>
+                </li>
                 <li class="mr-4 visiblew">
 
-                </li>        
+                </li>  
+                      
                 <li>
                         <li class="mr-4 visiblew"></li>
                         <form class="form-inline active-cyan-4">
@@ -64,10 +74,10 @@
                                     <img class="d-block ima-logo border-01 white" src="img/galeria/logo-cook.jpeg">     
                                 </div>  
                         </a>
-                        <div  style="left: 130px; width:auto; position: absolute; top: 15px; z-index: 1200;" class="visiblew animated fadeInDown txtNew  " >
+                        <div  style="left: 130px; width:auto; position: absolute; top: 15px; z-index: 1200;" class="visible-l-w animated fadeInDown txtNew  " >
                             <p class="sise-t-13 b-01  cook-color">INSTITUTO SUPERIOR GASTRONÓMICO</p>    
                         </div>
-                        <div  style="left: 120px; width:auto; position: absolute; top: 35px; z-index: 1200;" class="visiblew animated fadeInDown txtNew  " >
+                        <div  style="left: 120px; width:auto; position: absolute; top: 35px; z-index: 1200;" class="visible-l-w animated fadeInDown txtNew  " >
                                         <p class="sise-t-30 f-360 cook-color">Cooking Gourmet</p>    
                         </div>
                 
@@ -87,92 +97,90 @@
 
                  
                  
-                  <div class="collapse navbar-collapse container" id="navbarResponsive">
+                  <div class="collapse navbar-collapse container float-right" id="navbarResponsive">
        
-                    <ul class="navbar-nav ml-auto m-1 ">
-                         
-                          <li class="nav-item active bg-p360-nav">   
-                             <a class="nav-link " href="{{ url('/') }}" id="nav-top-01"><span class="sise-t-15 m-2 f-360-l black-text"><i class="fas fa-home mr-2"></i> INICIO</span>
-                              </a>
-                          </li>    
-                          <li class="nav-item dropdown mega-dropdown">
-                                <a class="nav-link dropdown-toggle black-text" id="nav-top-01" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="sise-t-15 m-2 f-360-l black-text">CARRERAS </span> </a>
-                                <div class="dropdown-menu mega-menu row z-depth-1" aria-labelledby="navbarDropdownMenuLink">
-                                    <div class="row">
-                                        <div class="col-md-5 col-xl-3 sub-menu mt-5 mb-5 pl-4">
-                                            <ol class="list-unstyled mx-4 dark-grey-text">
-                                                <li class="sub-title text-uppercase mt-sm"><a class="menu-item" href="">Laptops</a></li>
-                                                <li class="sub-title text-uppercase"><a class="menu-item" href="">Phones</a></li>
-                                                <li class="sub-title text-uppercase"><a class="menu-item" href="">Lifestyle</a></li>
-                                                <li class="sub-title text-uppercase"><a class="menu-item" href="">Technology</a></li>
-                                                <li class="sub-title text-uppercase"><a class="menu-item" href="">Design</a></li>
-                                            </ol>
-                                        </div>
-                                        <div class="col-md-7 col-xl-9">
-                                            <div class="row">
-                                                <div class="col-xl-6 mt-5 mb-4 pr-5 clearfix d-none d-md-block">
-                                                    <h6 class="sub-title p-sm mb-4 text-uppercase font-weight-bold dark-grey-text">Featured</h6>
-                                                    <!--Featured image-->
-                                                    <div class="view overlay pb-3">
-                                                        <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(42).jpg" class="img-fluid z-depth-1" alt="First sample image">
-                                                        <div class="mask rgba-white-slight flex-center">
-                                                            <p></p>
-                                                        </div>
+                    <ul class="navbar-nav ml-auto m-1  ">
+                        
+                        <li class="nav-item active bg-p360-nav">   
+                            <a class="nav-link " href="{{ url('/') }}" id="nav-top-01"><span class="m-textplus-nav-0 p-2 font-weight-bold"> INICIO</span>
+                            </a>
+                        </li>    
+                        <li class="nav-item dropdown mega-dropdown">
+                            <a class="nav-link dropdown-toggle black-text" id="nav-top-01" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="m-textplus-nav-0 p-2 font-weight-bold">CARRERAS </span> </a>
+                            <div class="dropdown-menu mega-menu row z-depth-1 bg-white-t" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="row">
+                                    <div class="col-md-5 col-xl-3 sub-menu mt-5 mb-5 pl-4">
+                                            <h6 class="sub-title p-sm mb-4 text-uppercase font-weight-bold dark-grey-text">Carreras</h6>
+                                        <ol class="list-unstyled mx-4 dark-grey-text">
+                                            <li class="sub-title text-uppercase mt-sm"><a class="menu-item" href="{{ url('gastronomia') }}">Gastronomia & Arte culinario</a></li>
+                                            <li class="sub-title text-uppercase"><a class="menu-item" href="{{ url('panaderia') }}">Panadería & Pasteleria</a></li>
+                                            <li class="sub-title text-uppercase"><a class="menu-item" href="{{ url('bar') }}">Bar Profesional</a></li>
+                                        </ol>
+                                    </div>
+                                    <div class="col-md-7 col-xl-9">
+                                        <div class="row">
+                                            <div class="col-xl-6 mt-5 mb-4 pr-5 clearfix d-none d-md-block">
+                                                <h6 class="sub-title p-sm mb-4 text-uppercase font-weight-bold dark-grey-text">Evento</h6>
+                                                <!--Featured image-->
+                                                <div class="view overlay pb-3">
+                                                    <img src="img/galeria/centro.jpg" class="img-fluid z-depth-1" alt="First sample image">
+                                                    <div class="mask rgba-white-slight flex-center">
+                                                        <p></p>
                                                     </div>
-                                                    <h4 class="mb-2"><a class="news-title" href="">Lorem ipsum dolor sit amet, consectetur isum adipisicing elit.</a></h4>
-                                                    <p class="font-small text-uppercase text-muted">By <a class="m-sm" href="#!">Anna Doe</a> - July 15, 2017</p>
                                                 </div>
-                                                <div class="col-xl-6 mt-5 mb-4 pr-5 clearfix d-none d-xl-block">
-                                                    <h6 class="sub-title p-sm mb-4 text-uppercase font-weight-bold dark-grey-text">Recent</h6>
-                                                    <div class="news-single">
-                                                        <div class="row">
-                                                            <div class="col-md-4">
-                                                                <!--Image-->
-                                                                <div class="view overlay z-depth-1">
-                                                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(43).jpg" class="img-fluid" alt="Minor sample post image">
-                                                                    <div class="mask rgba-white-slight flex-center">
-                                                                        <p></p>
-                                                                    </div>
+                                                <h4 class="mb-2"><a class="news-title" href="">Lorem ipsum dolor sit amet, consectetur isum adipisicing elit.</a></h4>
+                                                <p class="font-small text-uppercase text-muted">By <a class="m-sm" href="#!">Anna Doe</a> - July 15, 2017</p>
+                                            </div>
+                                            <div class="col-xl-6 mt-5 mb-4 pr-5 clearfix d-none d-xl-block">
+                                                <h6 class="sub-title p-sm mb-4 text-uppercase font-weight-bold dark-grey-text">Talleres</h6>
+                                                <div class="news-single">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <!--Image-->
+                                                            <div class="view overlay z-depth-1">
+                                                                <img src="img/galeria/fondo-04.jpg" class="img-fluid" alt="Minor sample post image">
+                                                                <div class="mask rgba-white-slight flex-center">
+                                                                    <p></p>
                                                                 </div>
-                                                            </div>
-                                                            <div class="col-md-8">
-                                                                <a class="news-title smaller mb-1" href="">Duis aute irure dolor reprehenderit in voluptate.</a>
-                                                                <p class="font-small text-uppercase text-muted">July 14, 2017</p>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                    <div class="news-single">
-                                                        <div class="row">
-                                                            <div class="col-md-4">
-                                                                <!--Image-->
-                                                                <div class="view overlay z-depth-1">
-                                                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(44).jpg" class="img-fluid" alt="Minor sample post image">
-                                                                    <div class="mask rgba-white-slight flex-center">
-                                                                        <p></p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-8">
-                                                                <a class="news-title smaller mb-1" href="">Tempore autem reiciendis iste nam dicta.</a>
-                                                                <p class="font-small text-uppercase text-muted">July 14, 2017</p>
-                                                            </div>
+                                                        <div class="col-md-8">
+                                                            <a class="news-title smaller mb-1" href="">Duis aute irure dolor reprehenderit in voluptate.</a>
+                                                            <p class="font-small text-uppercase text-muted">July 14, 2017</p>
                                                         </div>
                                                     </div>
-                                                    <div class="news-single">
-                                                        <div class="row">
-                                                            <div class="col-md-4">
-                                                                <!--Image-->
-                                                                <div class="view overlay z-depth-1">
-                                                                    <img src="https://mdbootstrap.com/img/Photos/Horizontal/Work/6-col/img%20(41).jpg" class="img-fluid" alt="Minor sample post image">
-                                                                    <div class="mask rgba-white-slight flex-center">
-                                                                        <p></p>
-                                                                    </div>
+                                                </div>
+                                                <div class="news-single">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <!--Image-->
+                                                            <div class="view overlay z-depth-1">
+                                                                <img src="img/galeria/gal-01.jpg" class="img-fluid" alt="Minor sample post image">
+                                                                <div class="mask rgba-white-slight flex-center">
+                                                                    <p></p>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-8">
-                                                                <a class="news-title smaller mb-1" href="">Eligendi dicta sunt amet, totam ea recusandae.</a>
-                                                                <p class="font-small text-uppercase text-muted">July 14, 2017</p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <a class="news-title smaller mb-1" href="">Tempore autem reiciendis iste nam dicta.</a>
+                                                            <p class="font-small text-uppercase text-muted">July 14, 2017</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="news-single">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <!--Image-->
+                                                            <div class="view overlay z-depth-1">
+                                                                <img src="img/galeria/panaderia.jpg" class="img-fluid" alt="Minor sample post image">
+                                                                <div class="mask rgba-white-slight flex-center">
+                                                                    <p></p>
+                                                                </div>
                                                             </div>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <a class="news-title smaller mb-1" href="">Eligendi dicta sunt amet, totam ea recusandae.</a>
+                                                            <p class="font-small text-uppercase text-muted">July 14, 2017</p>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -180,21 +188,22 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                          <li class="nav-item bg-p360-nav ">
-                            <a class="nav-link" id="nav-top-01" href="{{ url('noticia') }}"><span class="sise-t-15 m-2 f-360-l black-text"><i class="far fa-edit mr-2"></i> NOTICIA</span></a>
-                          </li>
-                          <li class="nav-item bg-p360-nav ">
-                            <a class="nav-link" id="nav-top-01" href="{{ url('/') }}"><span class="sise-t-15 m-2 f-360-l black-text"><i class="fas fa-users mr-2"></i> NOSOTROS</span></a>
-                          </li>
-                          <li class="nav-item bg-p360-nav ">
-                            <a class="nav-link" id="nav-top-01" href="{{ url('contacto') }}"><span class="sise-t-15 m-2 f-360-l black-text"><i class="fas fa-user-tie mr-2"></i> CONTACTANOS</span></a>
-                          </li>
-                          <li class="nav-item bg-p360-nav ">
-                                <a class="nav-link" id="nav-top-01" href="{{ url('alumno') }}"><span class="sise-t-15 m-2 f-360-l black-text"><i class="fas fa-user-tie mr-2"></i> TESTIMONIO</span></a>
+                            </div>
                         </li>
-                          
-                      </ul>
+                        <li class="nav-item bg-p360-nav ">
+                        <a class="nav-link" id="nav-top-01" href="{{ url('noticia') }}"><span class="m-textplus-nav-0 p-2 font-weight-bold"> NOTICIA</span></a>
+                        </li>
+                        <li class="nav-item bg-p360-nav ">
+                        <a class="nav-link" id="nav-top-01" href="{{ url('nosotros') }}"><span class="m-textplus-nav-0 p-2 font-weight-bold"> NOSOTROS</span></a>
+                        </li>
+                        <li class="nav-item bg-p360-nav ">
+                        <a class="nav-link" id="nav-top-01" href="{{ url('contacto') }}"><span class="m-textplus-nav-0 p-2 font-weight-bold"> CONTACTANOS</span></a>
+                        </li>
+                        <li class="nav-item bg-p360-nav ">
+                            <a class="nav-link" id="nav-top-01" href="{{ url('alumno') }}"><span class="m-textplus-nav-0 p-2 font-weight-bold"> TESTIMONIO</span></a>
+                        </li>
+                        
+                    </ul>
                        
                     
                   </div>
@@ -281,7 +290,11 @@
                         
                     </ul>
                     </div><!-- Footer Widget Ends -->
-        
+                    <a href="#" id="js_up" class="boton-subir border">
+                            <i class="fas fa-angle-up" aria-hidden="true"></i>
+                     </a>
+
+
                     <!-- Footer Widget Starts -->
                     <div class="footer-widget col-md-3 col-xs-12 wow fadeIn" data-wow-delay=".5s">
                     <h3 class="m-textplus-titulo-03 b-01 cook-text">
@@ -320,18 +333,17 @@
                 
                 <!-- Copyright -->
                 <div id="copyright" class="cook-text bg-cooking">
-                <div class="container">
-                    <div class="row">
-                    <div class="col-md-6 col-sm-6">
-                        <p class="copyright-text white-text">
-                        ©  2018 Engage. All right reserved. Designed with by <a href="#" class="indigo-text b-01">FreeCloud</a>
+                <div class="container text-center p-2">
+
+                        <p class="copyright-text white-text sise-t-17">
+                        ©  2018 Todos los derechos reservados 
+                        <a href="#" class="white-text b-01 bg-sli-f pr-4 pl-4 pt-2 pb-2 redondear">
+                            <i class="fas fa-cloud ml-2 mr-2"></i>
+                            <span class="b-01">
+                                    FreeCloud
+                            </span>   
+                        </a>
                         </p>
-                    </div>
-                    <div class="col-md-6">
-                    
-                        
-                    </div>
-                    </div>
                 </div>
                 </div>
                 <!-- Copyright  End-->
@@ -340,70 +352,7 @@
  
     <!-- Modal -->
  <!-- Full Height Modal Right -->
-    <div class="modal fade right" id="fullHeightModalRight" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-full-height modal-right" role="document">
-            <div class="modal-content">
-                <div class="modal-header white ">
-                    <h5 class="modal-title b-01 " id="exampleModalLabel"><span class="cook-color">Requisitos</span> </h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span><span class="sise-t-15">cerrar</span>
-                    </button>
-                </div>
-                <div class="modal-body bg-cook white-text redondear-cook pl-4 mn-t-01">
-                    <div class="comenta-lavel pt-2 pl-4">
-                        <p class="">Certificado del 1<sup>ro</sup> al 5<sup>to</sup> de Secundaria.</p>
-                        <p>Fotografias de tamaño pasaporte</p>
-                        <p>Fotocopia de Documento de Identidad</p>
-                        <p> Recibo de Agua o Luz</p>
-                        <p>Carnet de sanidad</p> 
-                    </div>
-                    <div class="row comenta-form pt-2 pl-4">
-                        <div class="col-md-4">
-                            <p class="b-01">Inicio</p>
-                            <p class="b-01">MATRICULA</p>
-                            <p class="b-01">INSCRIPCION</p>
-                            <p class="b-01">MENSUALIDAD</p>
-                            <P class="b-01">horario</P>
-                            <P class="b-01 mt-2">Frecuencia</P>
-                        </div>
-                        <div class="col-md-8">
-                                <input class="form-control form-control-sm-p mb-2 pl-4" type="text" >
-                                <input class="form-control form-control-sm-p mb-2" type="text" >
-                                <input class="form-control form-control-sm-p mb-2 pl-4" type="text" >
-                                <input class="form-control form-control-sm-p mb-2 pl-4" type="text" placeholder="S/450.00">
-                                <div class="row sm-02">
-                                     <div class="col-4 sm-02">
-                                            <input class="form-control form-control-sm-p  mb-2 text-center" type="text" placeholder="Mañana">
-                                    </div>
-                                    <div class="col-4 sm-02">
-                                            <input class="form-control form-control-sm-p  mb-2 text-center" type="text" placeholder="Tarde">
-                                    </div>
-                                    <div class="col-4 sm-02">
-                                            <input class="form-control form-control-sm-p  mb-2 text-center" type="text" placeholder="Noche">
-                                    </div>
-                                </div>
-                                <P class="">Lunes a Viernes</P>  
-                        </div>
-                    </div>
-                    <div class=" pt-2 pl-4">
-                         <p class="text-center">Uniforme: S/130.00 Nuevos soles</p>
-                         <p class="b-01">Incluye</p>
-                         <ul class="">
-                            <li><span class=" sise-t-13">1 Chaqueta</span> </li>
-                            <li><span class=" sise-t-13">1 pantalón</span> </li>
-                            <li><span class=" sise-t-13">1 mandión</span> </li>
-                            <li><span class=" sise-t-13">1 gorro de chef</span> </li>
-                         </ul>
-                         
-                    </div>
-                     
-                </div>
-                <div class="modal-footer">
-                
-                </div>
-            </div>
-        </div>
-    </div>
+ 
     
 </body>
 </html>
@@ -469,4 +418,24 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
         header.classList.remove("sticky");
       }
     }
+</script>
+<!-- script para que funcione al 100% el botón ir arriba -->
+<script>
+//invocamos al objeto (window) y a su método (scroll), solo se ejecutara si el usuario hace scroll en la página
+$(window).scroll(function(){
+  if($(this).scrollTop() > 300){ //condición a cumplirse cuando el usuario aya bajado 301px a más.
+    $("#js_up").slideDown(300); //se muestra el botón en 300 mili segundos
+  }else{ // si no
+    $("#js_up").slideUp(300); //se oculta el botón en 300 mili segundos
+  }
+});
+
+//creamos una función accediendo a la etiqueta i en su evento click
+$("#js_up i").on('click', function (e) { 
+  e.preventDefault(); //evita que se ejecute el tag ancla (<a href="#">valor</a>).
+  $("body,html").animate({ // aplicamos la función animate a los tags body y html
+    scrollTop: 0 //al colocar el valor 0 a scrollTop me volverá a la parte inicial de la página
+  },700); //el valor 700 indica que lo ara en 700 mili segundos
+  return false; //rompe el bucle
+});
 </script>
